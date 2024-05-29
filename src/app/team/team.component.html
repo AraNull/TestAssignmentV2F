@@ -1,1 +1,25 @@
-<p>team works!</p>
+<div class="team-page">
+    <div class="team-intro">
+        <p class="header-text">Team</p>
+        <h4>Get Quality Education</h4>
+        <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="team-carousel">
+            <p-carousel [value]="teamMembers" [numVisible]="3" [numScroll]="1">
+                <ng-template pTemplate="item" let-member>
+                    <div class="custom-card">
+                        <img [src]="member.imageUrl" alt="{{ member.name }}" class="team-image">
+                        <div class="card-content">
+                          <h2 class="card-header">{{ member.name }}</h2>
+                          <p class="card-subheader">{{ member.profession }}</p>
+                          <div class="social-links">
+                            <a [href]="member.socialLinks.facebook"><img src="../../assets/facebook.svg" alt="Facebook" class="social-icon"></a>
+                            <a [href]="member.socialLinks.instagram"><img src="../../assets/instagram.svg" alt="Instagram" class="social-icon"></a>
+                            <a [href]="member.socialLinks.twitter"><img src="../../assets/twitter.svg" alt="Twitter" class="social-icon"></a>
+                          </div>
+                        </div>
+                      </div>
+            </ng-template>
+        </p-carousel>
+          </div>
+</div>

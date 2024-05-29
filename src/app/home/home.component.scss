@@ -1,0 +1,60 @@
+
+$bg-color: #FDF3F1;
+
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: $bg-color;
+  
+    .welcome-text {
+      max-width: 50%;
+  
+      .greeting {
+        font-size: 1.2rem;
+        color: #96ba7b;
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+      }
+  
+      .description {
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: #666;
+      }
+  
+      .buttons {
+        display: flex;
+        gap: 1rem;
+  
+        .btn {
+          text-decoration: none;
+          padding: 0.8rem 1.5rem;
+          border-radius: 5px;
+          color: #fff;
+  
+          &.join-us {
+            background-color: #8bc34a;
+          }
+  
+          &.learn-more {
+            color: #96ba7b;
+            border-color: #96ba7b;
+        }
+        }
+      }
+    }
+  
+    .image-container {
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+  
